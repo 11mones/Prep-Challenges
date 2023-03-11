@@ -92,11 +92,25 @@ const objLat = (obj) => {
 
 const cvFormatter = (arr) => {
     
-    if(arr["yearsOfExperience"]> 1){
-return (arr["firstName"] , arr["lastName"] , arr["tech"]);
-    }
+    let arr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+             
+        if (arr[i].lastName === null && arr[i].yearsOfExperience > 1) {
+                 arr2.push({ fullName: `${arr[i].firstName}`, tech: `${arr[i].tech}` });
+
+        } 
+        else if (arr[i].firstName === null && arr[i].yearsOfExperience > 1) {
+            arr2.push({ fullName: `${arr[i].lastName}`, tech: `${arr[i].tech}` });}
+        else if (arr[i].yearsOfExperience > 1) {
+                     arr2.push({ fullName: `${arr[i].firstName} ${arr[i].lastName}`, tech: `${arr[i].tech}` });
+        }  
+    } return arr2;
+
+    
     // write your code here
 };
+
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
