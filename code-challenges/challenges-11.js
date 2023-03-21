@@ -17,7 +17,10 @@
 // 
 
 function square(arr) {
-  
+
+const res = arr.map(x => x * x);
+
+  return res;
     
     // write your code here
 }
@@ -58,6 +61,12 @@ function square(arr) {
 // Output: ['Adam Anderson', 'Ben Zeller', 'Peter Mccord', 'Fred Sagar', 'Nathan Weiss']
 
 function fullName(arr) {
+
+    let fullNames;
+    fullNames = arr
+      .map(m => `${m.firstName} ${m.lastName}`);
+    return fullNames;
+
     // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
