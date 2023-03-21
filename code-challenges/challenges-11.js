@@ -67,6 +67,9 @@ function fullName(arr) {
       .map(m => `${m.firstName} ${m.lastName}`);
     return fullNames;
 
+
+    
+
     // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
