@@ -18,7 +18,6 @@
 function square(arr) {
 
 const res = arr.map(x => x * x);
-
   return res;
     
     // write your code here
