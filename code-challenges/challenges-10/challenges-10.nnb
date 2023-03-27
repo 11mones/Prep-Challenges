@@ -24,7 +24,11 @@
         {
             "language": "javascript",
             "source": [
+
                 "function birthdayCakeCandles(candles) {\n    let res = [];\n     let max = 0;\n     candles.forEach(candle => {\n         if(candle > max)\n          max = candle;\n         if(res[candle])\n          res[candle]++;\n         else res[candle] = 1;\n     });\n     return res[max];\n }"
+
+                ""
+
             ],
             "outputs": []
         },
