@@ -18,6 +18,8 @@
 // 
 
 const oddFiltration = (arr) => {
+    const odds = arr.filter((num) => num % 2 === 1);
+    return odds;
 
 
 
