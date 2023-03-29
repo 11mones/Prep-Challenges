@@ -16,7 +16,6 @@
 // Output: [ 4, 64, 9, 25 ]
 // 
 function square(arr) {
-
 const res = arr.map(x => x * x);
   return res;
     
