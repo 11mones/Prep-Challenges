@@ -42,14 +42,13 @@ const objectCounter = (obj) => {
 
     // write your code here
 
-    let initialValue = 0;
-    let e =1;
+    const initialValue = 0;
+    let i= 1;
     const sumWithInitial = obj.reduce(
-      (accumulator, e) => accumulator + 1,
+      (accumulator, i) => accumulator+1,
       initialValue
     );
-    return sumWithInitial;
-
+  return sumWithInitial;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -70,15 +69,17 @@ const objectCounter = (obj) => {
 
 const stringReverse = (str) => {
     // write your code here
-    const array = string.split(' ');
-    const reversedString = array.reduce((reversed, character) => {
-        return character +" "+ reversed
-    }, '')
-
-    return reversedString
-
+    let c = str.split(' ');
+    let i = [] ;
+    let res = c.reduce((accumulator,current,index)=>
+  
+      i[index]=c[c.length-1-index] , 0
+    )
+    let m = `${i.join(' ')}` ;
+    return m;
+    }
    
-}
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
